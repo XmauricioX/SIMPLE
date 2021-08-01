@@ -1,0 +1,34 @@
+@import url(./index.css);
+
+#home{
+    background-color: rgb(180, 180, 180);
+
+
+    width: 80%;
+    margin: 10% auto;
+    height: 100vh;
+    text-align: center;
+}
+#home #buscar::placeholder{
+    color: var(--Grey);
+    font-family: var(--Font);
+    font-size: 35px;
+}
+#home #buscar{
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+}
+
+/*     CARTAS      */
+
+#cards .card .info-card{
+    display: none;
+}
+
+@media (min-width: 768px){
+
+}
+@media (min-width: 1024px){
+
+}

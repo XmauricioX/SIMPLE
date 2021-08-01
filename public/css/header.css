@@ -1,0 +1,13 @@
+@import url(./index.css);
+#header{
+    text-align: center;
+}
+#header #titulo{
+    font-size: 150px;
+    color: var(--Gray);
+}
+@media (min-width: 768px){
+    #header #titulo{
+        font-size: 200px;
+    }
+}
