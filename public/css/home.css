@@ -1,12 +1,9 @@
 @import url(./index.css);
 
 #home{
-    background-color: rgb(180, 180, 180);
-
-
-    width: 80%;
+    width: 60%;
     margin: 10% auto;
-    height: 100vh;
+    height: auto;
     text-align: center;
 }
 #home #buscar::placeholder{
@@ -22,9 +19,30 @@
 
 /*     CARTAS      */
 
+#cards {
+    overflow:;
+    width: 100%;
+    height: auto;
+
+}
+
+#cards .card{
+    margin: 20px 0;
+    height: auto;
+}
+
+#cards .card .img-container{
+    width: 100%;
+}
+
+#cards .card .img-container .img-home{
+    width: 100%;
+}/* esto maneja el tamaño del contenedor de la imagen */
 #cards .card .info-card{
     display: none;
-}
+}/* Con esto la imagen se ajusta sola */
+
+
 
 @media (min-width: 768px){
 
