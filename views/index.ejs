@@ -2,19 +2,7 @@
 <html>
   <head>
 
-    <title> SIMPLE </title>
-
-    <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/d7f2d4eb0a.js" crossorigin="anonymous"></script>
-    <!-- FONT AWESOME -->
-
-    <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
-    <!-- GOOGLE FONTS -->
-
-    <!-- INDEX CSS -->
-    <link rel="stylesheet" href="/css/index.css">
-    <!-- INDEX CSS -->
+    <%- include("./partials/head") -%>
 
     <!-- HEADER -->
     <link rel='stylesheet' href='/css/header.css' />
@@ -22,38 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- HEADER -->
 
-    <!-- NAV -->
-    <link rel="stylesheet" href="/css/nav.css">
-    <!-- NAV -->
-
     <!-- HOME -->
     <link rel="stylesheet" href="/css/home.css">
     <!-- HOME -->
-
-    <!-- FOOTER -->
-    <link rel="stylesheet" href="/css/footer.css">
-    <!-- FOOTER -->
-
   </head>
   <body>
 
-    <div id="header">
-      <p id="titulo">Simple</p>
-    </div>
+    <%-include("./partials/header") -%>
 
-    <div id="nav">
-      <p id="izquierda">
-       <a href="/">S</a> 
-      </p>
-      <div id="derecha">
-        <h3>Cuenta</h3>
-        <i id="icono" class="fas fa-shopping-cart"></i>
-      </div>
-    </div>
-
+    <%- include("./partials/nav")-%>
+    
     <div id="home">
       
-      <form action="GET">
+      <form action="GET" method="GET">
         <input type="search" name="busqueda" id="buscar" placeholder="Buscar">
       </form>
 
@@ -126,14 +95,7 @@
 
     </div>
 
-    <footer id="footer">
-      <p id="S">
-        S
-      </p>
-      <p id="lorem">
-        Todos los derechos reservados.
-      </p>
-    </footer>
+  <%- include("./partials/footer") -%>
 
   </body>
 </html>
